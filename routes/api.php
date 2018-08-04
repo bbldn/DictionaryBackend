@@ -16,3 +16,9 @@ Route::group(['prefix' => 'translation'], function() {
     Route::get('getRandom', 'TranslationController@getRandomAction');
     Route::get('check', 'TranslationController@checkAction');
 });
+
+Route::group(['prefix' => 'statistics'], function() {
+    Route::get('get', 'StatisticsController@getAction');
+    Route::post('set', 'StatisticsController@setAction');
+    Route::get('check', 'StatisticsController@checkAction');
+});
