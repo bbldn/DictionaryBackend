@@ -22,3 +22,9 @@ Route::group(['prefix' => 'statistics'], function() {
     Route::post('set', 'StatisticsController@setAction');
     Route::get('check', 'StatisticsController@checkAction');
 });
+
+Route::group(['prefix' => 'sound'], function() {
+    Route::get('get', 'SoundController@getAction');
+    Route::post('add', 'SoundController@addAction');
+    Route::get('exist', 'SoundController@soundExistAction');
+});
