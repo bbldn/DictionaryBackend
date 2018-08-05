@@ -28,3 +28,7 @@ Route::group(['prefix' => 'sound'], function() {
     Route::post('add', 'SoundController@addAction');
     Route::get('exist', 'SoundController@soundExistAction');
 });
+
+Route::group(['prefix' => 'game'], function() {
+    Route::post('start', 'GameController@start');
+});
