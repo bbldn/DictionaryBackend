@@ -9,5 +9,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(WordsSeeder::class);
+        $this->call(TranslationsSeeder::class);
+        $this->call(StaticSeeder::class);
     }
 }
